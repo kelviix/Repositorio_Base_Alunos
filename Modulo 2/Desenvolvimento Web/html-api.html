@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula de JavaScript</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+    <h1 id="titulo">Olá, mundo!</h1>
+    <h2 id="mensagem"></h2>
+    <button onclick="mudarTexto()">Clique aqui</button>
+    <h3 id="seuTexto"></h3>
+    <button>seu botao</button>
+    <h1 id="novo-texto"> 
+        <input id="Valor" type="text">
+        <input id="Senha" type="text">
+    <script>
+        function mudarTexto (){
+            resposta=document.getElementById('Valor').value;
+
+            if (resposta =='Gabriel'){
+                document.getElementById('mensagem').innerText='login aprovado '
+
+            senha=document.getElementById('Senha').value
+            
+            if (senha =='1234'){
+                document.getElementById('novo-texto').innerText='senha correta, entrou'
+            }
+        
+
+
+            }
+
+        }
+    </script>
+</body>
+</html>
